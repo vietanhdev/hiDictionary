@@ -1,0 +1,141 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #0a7be9;
+}
+
+a {
+  text-decoration: none;
+}
+
+.txt-blue {
+  font-weight: bold;
+  color: #0a7be9;
+}
+
+.bg-grey {
+  background: #f3f3f3;
+}
+
+.left-green {
+  padding: 10px;
+  border-left: 3px solid #92f442;
+}
+
+/*Header*/
+header {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: #0a7be9;
+  color: #fff;
+}
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #0a7be9;
+  background: #fff;
+  border-radius: 5px;
+}
+/*Header*/
+
+
+#dict-wrapper {
+  max-width: 800px;
+  padding: 10px;
+  margin: 20px auto;
+}
+.dict-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: #0a7be9;
+  text-align: center;
+}
+
+/*Input*/
+.input-area {
+  border: 1px solid #0a7be9;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 4px;
+}
+.input-area .searchBox {
+  outline: none;
+  padding: 5px 10px;
+  background: #fff;
+  border: none;
+  border-right: 2px solid #0a7be9;
+}
+.input-area .searchOptions {
+  padding: 5px 10px;
+  background: #fff;
+  border: none;
+}
+.input-area .search-btn {
+  padding: 5px 10px;
+  border: none;
+  background: #0a7be9;
+  border-radius: 2px;
+  color: #fff;
+}
+.input-area .search-btn:hover {
+  background: #3b99f7;
+}
+/*Input*/
+
+/*Meaning*/
+.word {
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.meaning {
+  padding: 10px;
+}
+
+.meaning .category {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.meaning .lang1 {
+  color: #1198b6;
+}
+/*Meaning*/
+
+/*About Text*/
+.about-hidict{
+  display: none;
+  padding: 10px;
+  max-width: 400px;
+  margin: 50px auto;
+}
+.about-hidict p {
+  border-left: 2px solid #0a7be9;
+  padding: 5px;
+  line-height: 2;
+}
+.about-hidict h2 {
+  text-align: center;
+}
+/*About Text*/
+
+
+footer {
+  margin-top: 100px;
+  clear: both;
+  width: 100%;
+  z-index: 10;
+  height: 3em;
+  padding: 10px;
+  border-top: 1px solid #d6d6d6;
+  background: #f9f9f9;
+  color: #8e8e8e;
+  text-align: center;
+}
+footer a {
+  color: #8e8e8e;
+  text-decoration: none;
+}
