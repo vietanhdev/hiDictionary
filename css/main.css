@@ -60,6 +60,7 @@ header {
   padding: 4px;
 }
 .input-area .searchBox {
+  min-height: 100%;
   outline: none;
   padding: 5px 10px;
   background: #fff;
@@ -67,11 +68,13 @@ header {
   border-right: 2px solid #0a7be9;
 }
 .input-area .searchOptions {
+  min-height: 100%;
   padding: 5px 10px;
   background: #fff;
   border: none;
 }
 .input-area .search-btn {
+  min-height: 100%;
   padding: 5px 10px;
   border: none;
   background: #0a7be9;
