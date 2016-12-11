@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     // Resize searchBox to fill input-area
     function resizeSearchBox() {
-        let searchBoxWidth = $('.input-area').innerWidth() - $('.input-area .searchOptions').outerWidth() - $('.input-area .search-btn').outerWidth() - 48 + 'px'
+        let searchBoxWidth = $('.input-area').innerWidth() - $('.input-area .search-btn').outerWidth() + 'px'
         $('.input-area .searchBox').width(searchBoxWidth);
     }
     resizeSearchBox();

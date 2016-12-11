@@ -61,29 +61,25 @@ header {
 
 /*Input*/
 .input-area {
+  width: 100%;
+  max-width: 500px;
   border: 1px solid #0a7be9;
   border-radius: 5px;
-  max-width: 500px;
   margin: 0 auto;
   padding: 4px;
+  display: table;
 }
 .input-area .searchBox {
-  min-height: 100%;
+  width: 100%;
   outline: none;
   padding: 10px 10px;
+  padding-right: 70px;
   background: #fff;
   border: none;
   border-right: 2px solid #0a7be9;
 }
-.input-area .searchOptions {
-  min-height: 100%;
-  padding: 10px 10px;
-  background: #fff;
-  border: none;
-}
 .input-area .search-btn {
-  float: right;
-  min-height: 100%;
+  margin-left: -70px;
   padding: 10px 10px;
   border: none;
   background: #0a7be9;
