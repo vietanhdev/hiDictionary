@@ -2,7 +2,7 @@
     "name": "Từ điển toán học",
     "version": "1.0.0",
     "author": "",
-    "lookUpURL": "http://localhost:8080/word-data/math-dict/",
+    "lookUpURL": "https://vietanhdev.com/hiDictionary/word-data/math-dict/",
     "wordList": ["test",
         "AppleScript",
         "Asp",
