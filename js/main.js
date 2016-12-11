@@ -13,6 +13,38 @@ $(document).ready(function() {
     // Resize searchBox to fill input-area
 
 
+
+    function oDict(wordList, lookUpURL) { // dictionary object
+      this.wordList = wordList;
+      this.lookUpURL = lookUpURL;
+    }
+
+    var dictionary = new oDict(); // dictionary global var
+
+    // loadDictionary from json file
+    function loadDictionary(dictURL) {
+      $.ajax({url: dictURL,
+      dataType: "json",
+      success: function(result) {
+           dictionary.lookUpURL = result.lookUpURL;
+           dictionary.wordList = result.wordList;
+
+           // Load Quick Search
+           $( ".searchBox" ).autocomplete({
+             source: dictionary.wordList,
+             select: function( event, ui ) {
+                  findWord(ui.item.value, dictionary.lookUpURL);
+             }
+           });
+      }, error: function(xhr) {
+          $('.result-area').html('<p class="error bg-grey">Lỗi nạp từ điển. Mã lỗi: '+xhr.status+'</p>');
+      }});
+    }
+
+    // init dictionary database
+    loadDictionary('word-data/math-dict.json');
+
+
     // Show found word on screen
     function showWord(word) {
 
@@ -59,12 +91,9 @@ $(document).ready(function() {
       $('.result-area').html(html);
     }
 
-    function findWord(word) {
+    function findWord(word, lookUpURL) {
       let filename = word.replace(/[^a-z]/gi, '').toLowerCase();
-      // console.log(filename);
-      // console.log('word-data/'+filename+'.json');
-      // console.log(word);
-      $.ajax({url: 'word-data/'+filename+'.json',
+      $.ajax({url: lookUpURL+filename+'.json',
       dataType: "json",
       success: function(result) {
           showWord(result);
@@ -72,24 +101,23 @@ $(document).ready(function() {
           if (xhr.status == 404) {
               $('.result-area').html('<p class="error bg-grey">Không tìm thấy từ mà bạn yêu cầu.</p>');
           } else {
-              $('.result-area').html('<p class="error bg-grey">Có lỗi xảy ra. Mã lỗi: '+xhr.status+' - '+xhr.textStatus+'</p>');
+              $('.result-area').html('<p class="error bg-grey">Có lỗi xảy ra. Mã lỗi: '+xhr.status+'</p>');
           }
       }});
     }
 
-
     $('.search-btn').on('click', function(){
        console.log($('.searchBox').val());
-       findWord($('.searchBox').val());
+       findWord($('.searchBox').val(), dictionary.lookUpURL);
     });
-
 
     // Keyboard handle
     $(".searchBox").keypress(function(e){
         if (e.which == 13) // Press Enter to search
         {
-            findWord($('.searchBox').val());
+            findWord($('.searchBox').val(), dictionary.lookUpURL);
         };
     });
+
 
 });
