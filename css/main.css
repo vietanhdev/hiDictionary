@@ -67,19 +67,21 @@ header {
   border-radius: 5px;
   margin: 0 auto;
   padding: 4px;
-  display: table;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .input-area .searchBox {
-  width: 100%;
-  outline: none;
+  float: left;
+  width: 365px;
   padding: 10px 10px;
-  padding-right: 70px;
+  outline: none;
   background: #fff;
   border: none;
   border-right: 2px solid #0a7be9;
 }
 .input-area .search-btn {
-  margin-left: -70px;
+  float: right;
+  width: 100px;
   padding: 10px 10px;
   border: none;
   background: #0a7be9;
