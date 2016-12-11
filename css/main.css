@@ -93,10 +93,12 @@ header {
 /*Input*/
 
 
-/*.result-area {
-  display: none;
-}*/
 /*result-area*/
+.loading {
+  display:block;
+  margin: 50px auto;
+}
+
 .word {
   margin-top: 40px;
   padding: 10px;

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tạo file dữ liệu từ điển</title>
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+
+    <h1>Tạo file dữ liệu
+        <button id="download" type="button" name="button">Download</button>
+        <!-- Download -->
+        <span id="a-data"></span>
+    </h1>
+
+
+    <span>Từ vựng</span> <input id="word" type="text" name="" value=""><br>
+    <span>Us-voice</span> <input id="us" type="text" name="" value=""><br>
+    <span>Uk-Voice</span> <input id="uk" type="text" name="" value=""><br>
+
+<script type="text/javascript">
+    var wordClasses = {
+      "noun" : "Danh từ",
+      "verb" : "Động từ",
+      "adjective" : "Tính từ",
+      "adverb" : "Trạng từ",
+      "pronoun" : "Đại từ",
+      "preposition" : "Giới từ",
+      "conjunction" : "Liên từ",
+      "determiner" : "Định từ",
+      "exclamation" : "Thán từ"
+    }
+
+    for (var key in wordClasses) {
+      if (wordClasses.hasOwnProperty(key)) {
+          let html = '<div id="'+key+'">';
+          html += '<h2 onclick="$(\'#'+key+' .cl\').toggle();">'+key+'</h2>';
+          html += '<div class="cl">';
+          html += '<span>Nghĩa 1</span> <input class="mean1" type="text" name="" value=""><br>';
+          html += '<span>More:</span> <input class="more1" type="text" name="" value=""><br>';
+          html += '<span>example1 - eng</span> <input class="ex11" type="text" name="" value=""><br>';
+          html += '<span>example1 - vi</span> <input class="ex12" type="text" name="" value=""><br>';
+          html += '<span>Nghĩa 2</span> <input class="mean2" type="text" name="" value=""><br>';
+          html += '<span>More:</span> <input class="more2" type="text" name="" value=""><br>';
+          html += '<span>example1 - eng</span> <input class="ex21" type="text" name="" value=""><br>';
+          html += '<span>example1 - vi</span> <input class="ex22" type="text" name="" value=""><br>';
+          html += '</div></div>';
+          document.write(html);
+      }
+    }
+
+
+</script>
+
+</div>
+</body>
+
+
+<script type="text/javascript">
+    $('#download').click(function() {
+      console.log(download);
+          let word = {};
+          word.word = $('#word').val();
+          if ($('#us').val() != '')
+            word['us-voice'] = $('#us').val();
+          if ($('#uk').val() != '')
+            word['uk-voice'] = $('#uk').val();
+
+          for (var key in wordClasses) {
+            if (wordClasses.hasOwnProperty(key)) {
+                let defs = [];
+
+                if ($('#'+key+' .mean1').val() != '') {
+                    let def = {};
+                    def.definition = $('#'+key+' .mean1').val();
+                    if ($('#'+key+' .more1').val() != '') {
+                      def['more-info'] = $('#'+key+' .more1').val();
+                    }
+
+                    let examples = [];
+                    if ($('#'+key+' .ex11').val() != '') {
+                        let example = {};
+                        example.lang1 = $('#'+key+' .ex11').val();
+                        example.lang2 = $('#'+key+' .ex12').val();
+                        examples.push(example);
+                    }
+                    if ($('#'+key+' .ex21').val() != '') {
+                        let example = {};
+                        example.lang1 = $('#'+key+' .ex21').val();
+                        example.lang2 = $('#'+key+' .ex22').val();
+                        examples.push(example);
+                    }
+
+                    def.examples = examples;
+                    defs.push(def);
+                }
+
+                if ($('#'+key+' .mean2').val() != '') {
+                    let def = {};
+                    def.definition = $('#'+key+' .mean2').val();
+                    if ($('#'+key+' .more2').val() != '') {
+                      def['more-info'] = $('#'+key+' .more2').val();
+                    }
+
+                    let examples = [];
+                    if ($('#'+key+' .ex11').val() != '') {
+                        let example = {};
+                        example.lang1 = $('#'+key+' .ex11').val();
+                        example.lang2 = $('#'+key+' .ex12').val();
+                        examples.push(example);
+                    }
+                    if ($('#'+key+' .ex21').val() != '') {
+                        let example = {};
+                        example.lang1 = $('#'+key+' .ex21').val();
+                        example.lang2 = $('#'+key+' .ex22').val();
+                        examples.push(example);
+                    }
+
+                    def.examples = examples;
+                    defs.push(def);
+                }
+
+                if (defs.length > 0) {
+                  word[key] = defs;
+                }
+            }
+          }
+
+          console.log(word);
+
+          // download
+          var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(word));
+          $('#a-data').html('<a href="data:' + data + '" download="'+word.word+'.json">Download Me</a>');
+
+    });
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <style media="screen">
+  span {
+    font-weight: bold;
+  }
+  .container {
+    width: 1000px;
+    margin: 40px auto;
+  }
+  .cl {
+    display: none;
+  }
+  input[type="text"] {
+    padding: 10px;
+    width: 500px;
+  }
+  button {
+    padding: 10px;
+  }
+
+  h2 {
+    padding-left: 10px;
+    background: #a5a5a5;
+    color: #111;
+  }
+  </style>
+</html>

@@ -12,8 +12,6 @@ $(document).ready(function() {
     });
     // Resize searchBox to fill input-area
 
-
-
     function oDict(wordList, lookUpURL) { // dictionary object
       this.wordList = wordList;
       this.lookUpURL = lookUpURL;
@@ -33,6 +31,7 @@ $(document).ready(function() {
            $( ".searchBox" ).autocomplete({
              source: dictionary.wordList,
              select: function( event, ui ) {
+                  console.log(event);
                   findWord(ui.item.value, dictionary.lookUpURL);
              }
            });
@@ -91,9 +90,28 @@ $(document).ready(function() {
       $('.result-area').html(html);
     }
 
+
+    // Function to perform a lookup
     function findWord(word, lookUpURL) {
-      let filename = word.replace(/[^a-z]/gi, '').toLowerCase();
-      $.ajax({url: lookUpURL+filename+'.json',
+
+      // exit if word == '' (input box is empty)
+      if (word == '') {
+        return;
+      }
+      // Loading gif
+      $('.result-area').html('<img src="images/loading.gif" class="loading">');
+
+      // Remove invalid character
+      word = word.replace(/[^a-z]/gi, '').toLowerCase();
+
+      // Check in wordList
+      if ($.inArray(word, dictionary.wordList) == -1) {
+        $('.result-area').html('<p class="error bg-grey">Không tìm thấy từ mà bạn yêu cầu.</p>');
+        return;
+      }
+
+      // Download definition file
+      $.ajax({url: lookUpURL+word+'.json',
       dataType: "json",
       success: function(result) {
           showWord(result);
@@ -106,12 +124,13 @@ $(document).ready(function() {
       }});
     }
 
+    // Set event for Search button
     $('.search-btn').on('click', function(){
        console.log($('.searchBox').val());
        findWord($('.searchBox').val(), dictionary.lookUpURL);
     });
 
-    // Keyboard handle
+    // Press enter to search
     $(".searchBox").keypress(function(e){
         if (e.which == 13) // Press Enter to search
         {
