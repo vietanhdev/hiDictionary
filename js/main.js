@@ -77,12 +77,19 @@ $(document).ready(function() {
       }});
     }
 
-    //$('.search-btn').click();
-
 
     $('.search-btn').on('click', function(){
        console.log($('.searchBox').val());
        findWord($('.searchBox').val());
+    });
+
+
+    // Keyboard handle
+    $(".searchBox").keypress(function(e){
+        if (e.which == 13) // Press Enter to search
+        {
+            findWord($('.searchBox').val());
+        };
     });
 
 });
