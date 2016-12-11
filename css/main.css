@@ -6,6 +6,10 @@ a {
   text-decoration: none;
 }
 
+.gr {
+  color: #a3a3a3;
+}
+
 .txt-blue {
   font-weight: bold;
   color: #0a7be9;
@@ -15,10 +19,14 @@ a {
   background: #f3f3f3;
 }
 
-.left-green {
-  padding: 10px;
-  border-left: 3px solid #92f442;
+.centered {
+  text-align: center;
 }
+
+.padding10 {
+  padding: 10px;
+}
+
 
 /*Header*/
 header {
@@ -87,7 +95,11 @@ header {
 }
 /*Input*/
 
-/*Meaning*/
+
+/*.result-area {
+  display: none;
+}*/
+/*result-area*/
 .word {
   margin-top: 40px;
   padding: 10px;
@@ -95,19 +107,35 @@ header {
   border-bottom: 1px solid #d6d6d6;
 }
 
-.meaning {
+.word .txt-blue {
+  font-size: 42px;
+}
+
+.result-area {
   padding: 10px;
 }
 
-.meaning .category {
+.result-area .word-class {
   padding: 10px;
   font-weight: bold;
 }
 
-.meaning .lang1 {
+.result-area .meaning {
+  padding: 10px;
+  border-left: 3px solid #92f442;
+  font-weight: bold;
+}
+
+.result-area .lang1 {
   color: #1198b6;
 }
-/*Meaning*/
+
+.result-area .error {
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+/*result-area*/
 
 /*About Text*/
 .about-hidict{

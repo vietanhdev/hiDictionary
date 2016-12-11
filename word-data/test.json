@@ -1,0 +1,31 @@
+{
+    "word": "cook",
+    "us-voice": "kuk",
+    "uk-voice": "kuk",
+    "verb": [{
+        "more-info": "more info",
+        "definition": "n\u1ea5u, n\u1ea5u n\u01b0\u1edbng",
+        "examples": [{
+            "lang1": "where did you learn to cook?",
+            "lang2": "ch\u1ecb h\u1ecdc n\u1ea5u n\u01b0\u1edbng \u1edf \u0111\u00e2u th\u1ebf?"
+        }]
+    }, {
+        "more-info": "more info",
+        "definition": "Dinh nghia 2",
+        "examples": [{
+            "lang1": "lang 1 ex",
+            "lang2": "lang 2 ex"
+        }, {
+            "lang1": "lang 1 ex",
+            "lang2": "lang 2 ex"
+        }]
+    }],
+    "noun": [{
+        "more-info": "day la nghia thong dung",
+        "definition": "Dau bep",
+        "examples": [{
+            "lang1": "lang 1 ex",
+            "lang2": "lang 2 ex"
+        }]
+    }]
+}
