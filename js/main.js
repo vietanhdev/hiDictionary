@@ -49,8 +49,16 @@ $(document).ready(function() {
 
       let html = '<div class="word">';
       html += '<span class="txt-blue">'+word.word+'</span>';
-      if (word['us-voice'] != undefined) {html +=  ' <span class="gr">us</span> /'+word['us-voice']+'/'};
-      if (word['uk-voice'] != undefined) {html +=  ' <span class="gr">uk</span> /'+word['uk-voice']+'/'};
+
+      if (word['us-voice'] != undefined || word['uk-voice'] != undefined) {
+        if (word['us-voice'] == word['uk-voice']) {
+          html += ' /'+word['us-voice']+'/';
+        } else {
+          if (word['us-voice'] != undefined) {html +=  ' <span class="gr">us</span> /'+word['us-voice']+'/'};
+          if (word['uk-voice'] != undefined) {html +=  ' <span class="gr">uk</span> /'+word['uk-voice']+'/'};
+        }
+      }
+
       html += '</div>';
       let wordClasses = {
         "noun" : "Danh từ",
