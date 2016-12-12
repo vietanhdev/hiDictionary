@@ -125,6 +125,10 @@ header {
   font-weight: bold;
 }
 
+.result-area .lang1, .result-area .lang2 {
+  padding: 10px;
+}
+
 .result-area .lang1 {
   color: #1198b6;
 }
@@ -139,7 +143,7 @@ header {
 /*About Text*/
 .about-hidict{
   padding: 10px;
-  max-width: 400px;
+  max-width: 500px;
   margin: 50px auto;
 }
 .about-hidict p {
