@@ -132,7 +132,7 @@
 
           // download
           var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(word));
-          $('#a-data').html('<a href="data:' + data + '" download="'+word.word.replace(/[^a-z]/gi, '').toLowerCase()+'.json">Download Me</a>');
+          $('#a-data').html('<a href="data:' + data + '" download="'+word.word.replace(/[^a-z]/gi, '').toLowerCase()+'.json">DL: '+word.word+'</a>');
 
     });
 
