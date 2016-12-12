@@ -21,6 +21,7 @@
     <span>Uk-Voice</span> <input id="uk" type="text" name="" value=""><br>
 
 <script type="text/javascript">
+"use strict";
     var wordClasses = {
       "noun" : "Danh từ",
       "verb" : "Động từ",
@@ -86,12 +87,6 @@
                         example.lang2 = $('#'+key+' .ex12').val();
                         examples.push(example);
                     }
-                    if ($('#'+key+' .ex21').val() != '') {
-                        let example = {};
-                        example.lang1 = $('#'+key+' .ex21').val();
-                        example.lang2 = $('#'+key+' .ex22').val();
-                        examples.push(example);
-                    }
 
                     def.examples = examples;
                     defs.push(def);
@@ -105,12 +100,6 @@
                     }
 
                     let examples = [];
-                    if ($('#'+key+' .ex11').val() != '') {
-                        let example = {};
-                        example.lang1 = $('#'+key+' .ex11').val();
-                        example.lang2 = $('#'+key+' .ex12').val();
-                        examples.push(example);
-                    }
                     if ($('#'+key+' .ex21').val() != '') {
                         let example = {};
                         example.lang1 = $('#'+key+' .ex21').val();
