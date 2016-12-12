@@ -1,1 +1,16 @@
-{"word":" thousand","us-voice":"'θɑʊznd","uk-voice":"'θɑʊznd","noun":[{"definition":"con số 1000","examples":[]}],"pronoun":[{"definition":"nghìn","examples":[]}],"determiner":[{"definition":"nghìn","examples":[{"lang1":"I've got a thousand and one things to do","lang2":"(khẩu ngữ) tôi có vô số (một nghìn lẻ một) việc phải làm"}]}]}
+{
+    "word": " thousand",
+    "us-voice": "'θɑʊznd",
+    "uk-voice": "'θɑʊznd",
+    "noun": [{
+        "definition": "con số 1000",
+        "examples": []
+    }],
+    "determiner": [{
+        "definition": "nghìn",
+        "examples": [{
+            "lang1": "I've got a thousand and one things to do",
+            "lang2": "(khẩu ngữ) tôi có vô số (một nghìn lẻ một) việc phải làm"
+        }]
+    }]
+}

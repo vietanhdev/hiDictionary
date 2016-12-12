@@ -1,1 +1,13 @@
-{"word":" fifty","us-voice":"/'fifti","uk-voice":"/'fifti","noun":[{"definition":"con số 50","examples":[]}],"pronoun":[{"definition":"năm mươi","examples":[]}],"determiner":[{"definition":"năm mươi","examples":[]}]}
+{
+    "word": " fifty",
+    "us-voice": "/'fifti",
+    "uk-voice": "/'fifti",
+    "noun": [{
+        "definition": "con số 50",
+        "examples": []
+    }],
+    "determiner": [{
+        "definition": "năm mươi",
+        "examples": []
+    }]
+}

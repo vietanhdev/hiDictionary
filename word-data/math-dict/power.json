@@ -1,1 +1,14 @@
-{"word":"power ","us-voice":"'paʊə[r]","uk-voice":"'paʊə[r]","noun":[{"definition":"lực; năng lượng","examples":[{"lang1":"water power","lang2":"điện năng"}]},{"definition":" lũy thừa","examples":[{"lang1":"water power","lang2":"điện năng"}]}]}
+{
+    "word": "power ",
+    "us-voice": "'paʊə[r]",
+    "uk-voice": "'paʊə[r]",
+    "noun": [{
+        "definition": "lực; năng lượng",
+        "examples": [{
+            "lang1": "water power",
+            "lang2": "điện năng"
+        }]
+    }, {
+        "definition": " lũy thừa"
+    }]
+}

@@ -1,1 +1,12 @@
-{"word":"multiple","us-voice":"'mʌltipl","uk-voice":"'mʌltipl","noun":[{"definition":"bội số","examples":[{"lang1":"least common multiple","lang2":"bội số chung nhỏ nhất"}]}]}
+{
+    "word": "multiple",
+    "us-voice": "'mʌltipl",
+    "uk-voice": "'mʌltipl",
+    "noun": [{
+        "definition": "bội số",
+        "examples": [{
+            "lang1": "least common multiple",
+            "lang2": "bội số chung nhỏ nhất"
+        }]
+    }]
+}

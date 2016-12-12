@@ -1,1 +1,16 @@
-{"word":"fifteen ","us-voice":",fif'ti:n","uk-voice":",fif'ti:n","noun":[{"definition":"con số mười lăm","examples":[]},{"definition":"đội bóng bầu dục (mười lăm người)","examples":[]}],"pronoun":[{"definition":"mười lăm","examples":[]}],"determiner":[{"definition":"mười lăm","examples":[]}]}
+{
+    "word": "fifteen ",
+    "us-voice": ",fif'ti:n",
+    "uk-voice": ",fif'ti:n",
+    "noun": [{
+        "definition": "con số mười lăm",
+        "examples": []
+    }, {
+        "definition": "đội bóng bầu dục (mười lăm người)",
+        "examples": []
+    }],
+    "determiner": [{
+        "definition": "mười lăm",
+        "examples": []
+    }]
+}

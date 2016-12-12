@@ -1,1 +1,18 @@
-{"word":"number ","us-voice":"'nʌmbə[r]","uk-voice":"'nʌmbə[r]","noun":[{"definition":"số","examples":[{"lang1":"an even number","lang2":"số chẵn"},{"lang1":"one of our number","lang2":"một trong số chúng tôi"}]},{"definition":"đám, bọn, nhóm số","examples":[{"lang1":"an even number","lang2":"số chẵn"},{"lang1":"one of our number","lang2":"một trong số chúng tôi"}]}]}
+{
+    "word": "number ",
+    "us-voice": "'nʌmbə[r]",
+    "uk-voice": "'nʌmbə[r]",
+    "noun": [{
+        "definition": "số",
+        "examples": [{
+            "lang1": "an even number",
+            "lang2": "số chẵn"
+        }]
+    }, {
+        "definition": "đám, bọn, nhóm số",
+        "examples": [{
+            "lang1": "one of our number",
+            "lang2": "một trong số chúng tôi"
+        }]
+    }]
+}

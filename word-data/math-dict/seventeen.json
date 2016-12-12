@@ -1,1 +1,13 @@
-{"word":"seventeen ","us-voice":",sevn'ti:n","uk-voice":",sevn'ti:n","noun":[{"definition":"con số mười bảy","examples":[]}],"pronoun":[{"definition":"mười bảy","examples":[]}],"determiner":[{"definition":"mười bảy","examples":[]}]}
+{
+    "word": "seventeen ",
+    "us-voice": ",sevn'ti:n",
+    "uk-voice": ",sevn'ti:n",
+    "noun": [{
+        "definition": "con số mười bảy",
+        "examples": []
+    }],
+    "determiner": [{
+        "definition": "mười bảy",
+        "examples": []
+    }]
+}

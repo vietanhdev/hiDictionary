@@ -1,1 +1,9 @@
-{"word":"even number","us-voice":"ˈiːvn nʌmbə(r)","uk-voice":"ˈiːvn nʌmbə(r)","noun":[{"definition":"số chẵn","examples":[]}]}
+{
+    "word": "even number",
+    "us-voice": "ˈiːvn nʌmbə(r)",
+    "uk-voice": "ˈiːvn nʌmbə(r)",
+    "noun": [{
+        "definition": "số chẵn",
+        "examples": []
+    }]
+}

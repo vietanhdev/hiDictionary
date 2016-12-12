@@ -1,1 +1,16 @@
-{"word":"remainder ","us-voice":"ri'meində[r]","uk-voice":"ri'meində[r]","noun":[{"definition":"số dư","examples":[{"lang1":"divide 2 into 7, and the answer is 3, [with] remainder 1","lang2":"chia 7 cho 2, sẽ được 3, số dư là 1"},{"lang1":"ten people came in, but the remainder stayed outside","lang2":""}]},{"definition":"phần còn lại, số còn lại","more-info":"mười người vào, số còn lại đứng ở ngoài","examples":[{"lang1":"divide 2 into 7, and the answer is 3, [with] remainder 1","lang2":"chia 7 cho 2, sẽ được 3, số dư là 1"},{"lang1":"ten people came in, but the remainder stayed outside","lang2":""}]}]}
+{
+    "word": "remainder ",
+    "us-voice": "ri'meində[r]",
+    "uk-voice": "ri'meində[r]",
+    "noun": [{
+        "definition": "số dư",
+        "examples": [{
+            "lang1": "divide 2 into 7, and the answer is 3, [with] remainder 1",
+            "lang2": "chia 7 cho 2, sẽ được 3, số dư là 1"
+        }]
+    }, {
+        "definition": "phần còn lại, số còn lại",
+        "more-info": "mười người vào, số còn lại đứng ở ngoài",
+        "examples": []
+    }]
+}

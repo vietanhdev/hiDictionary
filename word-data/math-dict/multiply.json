@@ -1,1 +1,16 @@
-{"word":"multiply ","verb":[{"definition":"nhân","examples":[{"lang1":"children learning to multiply and divide","lang2":"trẻ em học nhân và chia"},{"lang1":"buy lot of raffles tickets and multiply your chance of success","lang2":"mua nhiều vé số để tăng cơ may trúng số"}]},{"definition":"tăng thêm (về số lượng)","examples":[{"lang1":"children learning to multiply and divide","lang2":"trẻ em học nhân và chia"},{"lang1":"buy lot of raffles tickets and multiply your chance of success","lang2":"mua nhiều vé số để tăng cơ may trúng số"}]}]}
+{
+    "word": "multiply ",
+    "verb": [{
+        "definition": "nhân",
+        "examples": [{
+            "lang1": "children learning to multiply and divide",
+            "lang2": "trẻ em học nhân và chia"
+        }]
+    }, {
+        "definition": "tăng thêm (về số lượng)",
+        "examples": [{
+            "lang1": "buy lot of raffles tickets and multiply your chance of success",
+            "lang2": "mua nhiều vé số để tăng cơ may trúng số"
+        }]
+    }]
+}

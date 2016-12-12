@@ -1,1 +1,13 @@
-{"word":" forty","us-voice":"'fɔ:ti","uk-voice":"'fɔ:ti","noun":[{"definition":"con số 40","examples":[]}],"pronoun":[{"definition":"bốn mươi","examples":[]}],"determiner":[{"definition":"bốn mươi","examples":[]}]}
+{
+    "word": " forty",
+    "us-voice": "'fɔ:ti",
+    "uk-voice": "'fɔ:ti",
+    "noun": [{
+        "definition": "con số 40",
+        "examples": []
+    }],
+    "determiner": [{
+        "definition": "bốn mươi",
+        "examples": []
+    }]
+}

@@ -1,1 +1,10 @@
-{"word":"algorithm","us-voice":"'ælgəriðəm","uk-voice":"'ælgəriðəm","noun":[{"definition":"thuật toán","more-info":"(máy điện toán)","examples":[]}]}
+{
+    "word": "algorithm",
+    "us-voice": "'ælgəriðəm",
+    "uk-voice": "'ælgəriðəm",
+    "noun": [{
+        "definition": "thuật toán",
+        "more-info": "máy điện toán",
+        "examples": []
+    }]
+}

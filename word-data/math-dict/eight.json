@@ -1,1 +1,13 @@
-{"word":"eight","us-voice":"eit","uk-voice":"eit","noun":[{"definition":"con số tám","examples":[]}],"determiner":[{"definition":"tám","examples":[]}]}
+{
+    "word": "eight",
+    "us-voice": "eit",
+    "uk-voice": "eit",
+    "noun": [{
+        "definition": "con số tám",
+        "examples": []
+    }],
+    "determiner": [{
+        "definition": "tám",
+        "examples": []
+    }]
+}

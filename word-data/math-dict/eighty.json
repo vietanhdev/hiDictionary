@@ -1,1 +1,13 @@
-{"word":"eighty","us-voice":"'eiti","uk-voice":"'eiti","noun":[{"definition":"số tám mươi","examples":[]}],"pronoun":[{"definition":"tám mươi","examples":[]}],"determiner":[{"definition":"tám mươi","examples":[]}]}
+{
+    "word": "eighty",
+    "us-voice": "'eiti",
+    "uk-voice": "'eiti",
+    "noun": [{
+        "definition": "số tám mươi",
+        "examples": []
+    }],
+    "determiner": [{
+        "definition": "tám mươi",
+        "examples": []
+    }]
+}

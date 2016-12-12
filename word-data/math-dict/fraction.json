@@ -1,1 +1,15 @@
-{"word":"fraction ","us-voice":"'fræk∫n","uk-voice":"'fræk∫n","noun":[{"definition":"phân số","examples":[{"lang1":"could you move a fraction closer?","lang2":"anh ta có thể xích sát lại hơn được một tí nữa không?"}]},{"definition":"phần nhỏ","examples":[{"lang1":"could you move a fraction closer?","lang2":"anh ta có thể xích sát lại hơn được một tí nữa không?"}]}]}
+{
+    "word": "fraction ",
+    "us-voice": "'fræk∫n",
+    "uk-voice": "'fræk∫n",
+    "noun": [{
+        "definition": "phân số",
+        "examples": []
+    }, {
+        "definition": "phần nhỏ",
+        "examples": [{
+            "lang1": "could you move a fraction closer?",
+            "lang2": "anh ta có thể xích sát lại hơn được một tí nữa không?"
+        }]
+    }]
+}
