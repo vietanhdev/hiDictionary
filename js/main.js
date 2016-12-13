@@ -26,18 +26,9 @@ $(document).ready(function() {
       success: function(result) {
            dictionary.lookUpURL = result.lookUpURL;
            dictionary.wordList = result.wordList;
-
            // Load Quick Search
            $( ".searchBox" ).autocomplete({
-             source: function (request, response) {
-                var results = $.ui.autocomplete.filter(dictionary.wordList, request.term);
-                var top_suggestions = $.grep(results, function (n,i) {
-                     return (n.label.substr(0, request.term.length).toLowerCase() == request.term.toLowerCase());
-                  });
-                var merged_results = $.merge(top_suggestions,results);
-                var final_results = _.uniq(merged_results,"label");
-                response(final_results);
-              },
+             source: dictionary.wordList,
              select: function( event, ui ) {
                   console.log(event);
                   findWord(ui.item.value, dictionary.lookUpURL);
@@ -47,6 +38,15 @@ $(document).ready(function() {
           $('.result-area').html('<p class="error bg-grey">Lỗi nạp từ điển. Mã lỗi: '+xhr.status+'</p>');
       }});
     }
+
+
+    // Overrides the default autocomplete filter function to search only from the beginning of the string
+    $.ui.autocomplete.filter = function (array, term) {
+        var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
+        return $.grep(array, function (value) {
+            return matcher.test(value.label || value.value || value);
+        });
+    };
 
     // init dictionary database
     loadDictionary('word-data/math-dict.json');
