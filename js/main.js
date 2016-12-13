@@ -29,7 +29,15 @@ $(document).ready(function() {
 
            // Load Quick Search
            $( ".searchBox" ).autocomplete({
-             source: dictionary.wordList,
+             source: function (request, response) {
+                var results = $.ui.autocomplete.filter(dictionary.wordList, request.term);
+                var top_suggestions = $.grep(results, function (n,i) {
+                     return (n.label.substr(0, request.term.length).toLowerCase() == request.term.toLowerCase());
+                  });
+                var merged_results = $.merge(top_suggestions,results);
+                var final_results = _.uniq(merged_results,"label");
+                response(final_results);
+              },
              select: function( event, ui ) {
                   console.log(event);
                   findWord(ui.item.value, dictionary.lookUpURL);
