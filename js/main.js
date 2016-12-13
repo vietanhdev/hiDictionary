@@ -30,7 +30,6 @@ $(document).ready(function() {
            $( ".searchBox" ).autocomplete({
              source: dictionary.wordList,
              select: function( event, ui ) {
-                  console.log(event);
                   findWord(ui.item.value, dictionary.lookUpURL);
              }
            });
@@ -117,14 +116,17 @@ $(document).ready(function() {
       // Loading gif
       $('.result-area').html('<img src="images/loading.gif" class="loading">');
 
-      // Remove invalid character
-      word = word.replace(/[^a-z]/gi, '').toLowerCase();
+      // Lowercase word
+      word = word.toLowerCase();
 
       // Check in wordList
       if ($.inArray(word, dictionary.wordList) == -1) {
         $('.result-area').html('<p class="error bg-grey">Không tìm thấy từ mà bạn yêu cầu.</p>');
         return;
       }
+
+      // Remove invalid character
+      word = word.replace(/[^a-z]/gi, '');
 
       // Download definition file
       $.ajax({url: lookUpURL+word+'.json',
